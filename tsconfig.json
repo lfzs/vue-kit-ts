@@ -1,0 +1,29 @@
+{
+  "include": ["src"],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "target": "ESNext", // 编译成什么版本的 js
+    "module": "ESNext", // 编译成什么模块
+    // this enables stricter inference for data properties on `this`
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+
+    "allowJs": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "dist",
+    // "lib": ["esnext", "dom"],
+    // experimentalDecorators: true, // 启用装饰器
+    // "removeComments": true,
+    // "moduleResolution": "node",
+    // "resolveJsonModule": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    "paths": {
+       "@/*": ["src/*"],
+    }
+  }
+}

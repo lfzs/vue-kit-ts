@@ -1,0 +1,28 @@
+{
+  "name": "vue-kit-ts",
+  "private": true,
+  "scripts": {
+    "start": "yarn && cross-env APP_ENV=development BASE_URL=/ webpack-dev-server",
+    "dev": "yarn && cross-env APP_ENV=development BASE_URL=/ webpack",
+    "staging": "yarn && cross-env APP_ENV=staging BASE_URL=/ webpack",
+    "build": "yarn && cross-env APP_ENV=production BASE_URL=/ webpack"
+  },
+  "dependencies": {
+    "vue": "^3.0.11",
+    "vue-router": "^4.0.8"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.11",
+    "clean-webpack-plugin": "4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.3.1",
+    "lint-staged": "^11.0.0",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.3.2",
+    "vue-loader": "^16.2.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^4.0.0-beta.3"
+  }
+}
